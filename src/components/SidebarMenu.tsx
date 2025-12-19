@@ -71,6 +71,12 @@ const SidebarMenu = ({
               Shop
             </Link>
             <Link
+              to="/kerala-specialties"
+              className="py-2 border-y border-secondaryBrown w-full block flex justify-center"
+            >
+              Kerala Specialties
+            </Link>
+            <Link
               to="/search"
               className="py-2 border-y border-secondaryBrown w-full block flex justify-center"
             >

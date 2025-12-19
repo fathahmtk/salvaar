@@ -161,6 +161,86 @@
       "price": 4500,
       "popularity": 5,
       "stock": 500
+    },
+    {
+      "id": "19",
+      "title": "Premium Handloom Kasavu Saree",
+      "image": "kasavu_saree_1.jpg",
+      "category": "kerala-specialties",
+      "price": 3079,
+      "popularity": 45,
+      "stock": 25,
+      "description": "Authentic white cotton saree with 1-inch gold kasavu border. Timeless ethnic style from Southloom."
+    },
+    {
+      "id": "20",
+      "title": "Mural Painted Kasavu Saree",
+      "image": "mural_saree.jpg",
+      "category": "kerala-specialties",
+      "price": 8815,
+      "popularity": 38,
+      "stock": 10,
+      "description": "Exquisite hand-painted mural motifs on premium Kerala cotton. A blend of art and tradition."
+    },
+    {
+      "id": "21",
+      "title": "Traditional Palakka Necklace",
+      "image": "palakka_necklace.jpg",
+      "category": "accessories",
+      "price": 1570,
+      "popularity": 50,
+      "stock": 15,
+      "description": "Classic green-stone Palakka mala with gold-plated finish. A staple for Kerala festivals."
+    },
+    {
+      "id": "22",
+      "title": "Gold-Plated Manga Mala",
+      "image": "manga_mala.jpg",
+      "category": "accessories",
+      "price": 2460,
+      "popularity": 42,
+      "stock": 12,
+      "description": "Traditional mango-shaped pendant long chain. Elegant and iconic Kerala jewelry."
+    },
+    {
+      "id": "23",
+      "title": "3-Piece Cotton Kurti Set",
+      "image": "kurti_set.jpg",
+      "category": "kerala-specialties",
+      "price": 1720,
+      "popularity": 48,
+      "stock": 30,
+      "description": "Comfortable and trendy floral print kurti with matching pants and dupatta."
+    },
+    {
+      "id": "24",
+      "title": "Aranmula Metal Mirror",
+      "image": "aranmula_mirror.jpg",
+      "category": "handicrafts",
+      "price": 2500,
+      "popularity": 35,
+      "stock": 5,
+      "description": "Unique handmade metal alloy mirror from Aranmula. A prestigious GI-tagged craft."
+    },
+    {
+      "id": "25",
+      "title": "Ayurvedic Nalpamaradi Thailam",
+      "image": "nalpamaradi_oil.jpg",
+      "category": "beauty",
+      "price": 450,
+      "popularity": 55,
+      "stock": 100,
+      "description": "Traditional skin brightening oil with turmeric and vetiver. Perfect for bridal glow."
+    },
+    {
+      "id": "26",
+      "title": "Coir & Jute Tote Bag",
+      "image": "coir_bag.jpg",
+      "category": "accessories",
+      "price": 850,
+      "popularity": 30,
+      "stock": 40,
+      "description": "Eco-friendly handmade bag crafted from Kerala's golden fiber."
     }
   ],
   "orders": [

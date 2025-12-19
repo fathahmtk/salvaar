@@ -13,6 +13,7 @@ import {
   SingleOrderHistory,
   SingleProduct,
   UserProfile,
+  KeralaSpecialties,
 } from "./pages";
 import { checkoutAction, searchAction } from "./actions/index";
 import { shopCategoryLoader } from "./pages/Shop";
@@ -80,6 +81,10 @@ const router = createBrowserRouter([
         path: "order-history/:id",
         element: <SingleOrderHistory />,
         loader: singleOrderLoader
+      },
+      {
+        path: "kerala-specialties",
+        element: <KeralaSpecialties />,
       },
     ],
   },
