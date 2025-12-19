@@ -26,7 +26,7 @@ const ProductItem = ({
         className="block relative aspect-[3/4] overflow-hidden bg-gray-50 shadow-sm group-hover:shadow-xl transition-all duration-700"
       >
         <img
-          src={`/assets/${image}`}
+          src={image.startsWith('http') ? image : `/assets/${image}`}
           alt={title}
           className="w-full h-full object-cover transform transition-transform duration-1000 group-hover:scale-110"
         />
