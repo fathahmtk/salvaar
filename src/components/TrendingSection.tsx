@@ -1,11 +1,25 @@
-import { useSelector } from "react-redux";
+import { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../store";
 import { Link } from "react-router-dom";
 import { HiOutlineFire } from "react-icons/hi2";
 import ProductItem from "./ProductItem";
+import { setProducts } from "../features/shop/shopSlice";
+import customFetch from "../axios/custom";
 
 const TrendingSection = () => {
+    const dispatch = useDispatch();
     const { products } = useSelector((state: RootState) => state.shop);
+
+    useEffect(() => {
+        if (products.length === 0) {
+            customFetch.get("/products")
+                .then(({ data }) => {
+                    dispatch(setProducts(data));
+                })
+                .catch((error) => console.error("Failed to fetch products:", error));
+        }
+    }, [dispatch, products.length]);
 
     // Filter trending products (popularity > 4 or stock < 10)
     const trendingProducts = products
