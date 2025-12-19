@@ -17,7 +17,7 @@ const Header = () => {
             to="/"
             className="text-3xl font-bold tracking-[0.2em] max-sm:text-2xl max-[400px]:text-xl uppercase group"
           >
-            SAL<span className="text-[#D4AF37] group-hover:text-black transition-colors duration-500">VAAR</span>
+            SHZYN<span className="text-[#D4AF37] group-hover:text-black transition-colors duration-500">STUDIOS</span>
           </Link>
           <div className="flex gap-6 items-center max-sm:gap-3">
             <Link to="/search" className="hover:text-[#D4AF37] transition-colors">
