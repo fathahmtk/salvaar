@@ -19,4 +19,5 @@ export { default as CategoriesSection } from "./CategoriesSection";
 export { default as SidebarMenu } from "./SidebarMenu";
 export { default as Dropdown } from "./Dropdown";
 export { default as ScrollToTop } from "./ScrollToTop";
+export { default as KeralaHeritageSection } from "./KeralaHeritageSection";
 export { default as ShowingSearchPagination } from "./ShowingSearchPagination";
