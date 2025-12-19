@@ -1,12 +1,14 @@
 import { Banner, CategoriesSection, HomeCollectionSection, KeralaHeritageSection } from "../components";
+import TrendingSection from "../components/TrendingSection";
 
 const Landing = () => {
   return (
     <>
       <Banner />
+      <TrendingSection />
       <KeralaHeritageSection />
-      <HomeCollectionSection />
       <CategoriesSection />
+      <HomeCollectionSection />
     </>
   );
 };

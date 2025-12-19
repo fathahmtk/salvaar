@@ -1,46 +1,72 @@
 import SocialMediaFooter from "./SocialMediaFooter";
-import { HiChevronDown } from "react-icons/hi2";
-
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <>
-      <SocialMediaFooter />
-      <footer className="max-w-screen-2xl mx-auto border-b-8 border-secondaryBrown px-5 max-[400px]:px-3">
-        <div className="flex justify-center gap-24 text-center mt-12 max-[800px]:flex-col max-[800px]:gap-10">
-          <div className="flex flex-col gap-1">
-            <h3 className="text-2xl font-bold max-sm:text-xl">Client Service</h3>
-            <p className="text-lg max-sm:text-base">After-sale Service</p>
-            <p className="text-lg max-sm:text-base">Free Insurance</p>
+    <footer className="bg-[#111] text-white pt-24 pb-10 border-t border-white/10">
+      <div className="max-w-screen-2xl mx-auto px-5 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-20 mb-20">
+          {/* Brand Column */}
+          <div className="space-y-6">
+            <Link to="/" className="text-2xl font-black tracking-[0.2em] uppercase block">
+              SHZYN<span className="text-[#D4AF37]">STUDIOS</span>
+            </Link>
+            <p className="text-gray-400 font-light text-sm leading-relaxed max-w-xs">
+              Redefining modern luxury through sustainable craft and avant-garde design.
+            </p>
+            <SocialMediaFooter />
           </div>
 
-          <div className="flex flex-col gap-1">
-            <h3 className="text-2xl font-bold max-sm:text-xl">Our Brand</h3>
-            <p className="text-lg max-sm:text-base">The Company</p>
-            <p className="text-lg max-sm:text-base">The Excellence</p>
-            <p className="text-lg max-sm:text-base">International Awards</p>
-            <p className="text-lg max-sm:text-base">Our Story</p>
+          {/* Links Columns */}
+          <div>
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] mb-8 text-[#D4AF37]">Shop</h4>
+            <ul className="space-y-4 text-sm text-gray-400 font-light">
+              <li><Link to="/shop/new-arrivals" className="hover:text-white transition-colors">New Arrivals</Link></li>
+              <li><Link to="/shop/accessories" className="hover:text-white transition-colors">Accessories</Link></li>
+              <li><Link to="/kerala-specialties" className="hover:text-white transition-colors">Kerala Edit</Link></li>
+              <li><Link to="/shop/sale" className="hover:text-white transition-colors">Sale</Link></li>
+            </ul>
           </div>
 
-          <div className="flex flex-col gap-1">
-            <h3 className="text-2xl font-bold max-sm:text-xl">Luxury Clothing</h3>
-            <p className="text-lg max-sm:text-base">Special Edition</p>
-            <p className="text-lg max-sm:text-base">Summer Edition</p>
-            <p className="text-lg max-sm:text-base">Unique Collection</p>
+          <div>
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] mb-8 text-[#D4AF37]">Company</h4>
+            <ul className="space-y-4 text-sm text-gray-400 font-light">
+              <li><Link to="/about" className="hover:text-white transition-colors">Our Story</Link></li>
+              <li><Link to="/sustainability" className="hover:text-white transition-colors">Sustainability</Link></li>
+              <li><Link to="/careers" className="hover:text-white transition-colors">Careers</Link></li>
+              <li><Link to="/press" className="hover:text-white transition-colors">Press</Link></li>
+            </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div>
+            <h4 className="text-xs font-bold uppercase tracking-[0.2em] mb-8 text-[#D4AF37]">Newsletter</h4>
+            <p className="text-gray-400 font-light text-sm mb-6">
+              Subscribe to receive updates, access to exclusive deals, and more.
+            </p>
+            <form className="flex flex-col gap-4">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="bg-white/5 border border-white/10 px-4 py-3 text-sm focus:outline-none focus:border-[#D4AF37] transition-colors"
+              />
+              <button className="bg-white text-black text-xs font-bold uppercase tracking-[0.2em] py-3 hover:bg-[#D4AF37] hover:text-white transition-all duration-300">
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
-        <div className="flex flex-col gap-8 my-20">
-          <p className="flex justify-center items-center text-2xl gap-2 max-sm:text-xl">Worldwide / English <HiChevronDown /></p>
-          <h2 className="text-6xl font-light text-center max-sm:text-5xl">FASHION</h2>
-          <p className="text-base text-center max-sm:text-sm">All rights reserved ©2024</p>
-          <ul className="flex justify-center items-center gap-7 text-base max-sm:text-sm max-[350px]:flex-col max-[350px]:gap-5">
-            <li>Cookie Policy</li>
-            <li>Privacy Policy</li>
-            <li>Legal Notes</li>
-          </ul>
+
+        {/* Bottom Bar */}
+        <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-[10px] text-gray-500 uppercase tracking-widest font-medium">
+          <p>© 2025 SHZYN STUDIOS. All Rights Reserved.</p>
+          <div className="flex gap-8">
+            <Link to="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+          </div>
         </div>
-      </footer>
-    </>
+      </div>
+    </footer>
   );
 };
 export default Footer;

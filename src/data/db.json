@@ -14,9 +14,9 @@
       "title": "Luxury Black Clothing",
       "image": "product image 2.jpg",
       "category": "luxury-collection",
-      "price": 1050,
-      "popularity": 4,
-      "stock": 20
+      "price": 120,
+      "popularity": 48,
+      "stock": 5
     },
     {
       "id": "3",
