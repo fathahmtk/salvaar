@@ -3,7 +3,24 @@
 @tailwind utilities;
 
 body {
+  font-family: "Outfit", sans-serif;
+  @apply bg-[#FAF9F6] text-black antialiased;
+}
+
+h1, h2, h3, h4, .font-accent {
+  font-family: "Outfit", sans-serif;
+}
+
+.font-serif-luxury {
   font-family: "Merriweather", serif;
+}
+
+.glassmorphism {
+  @apply bg-white/70 backdrop-blur-md border border-white/20 shadow-sm transition-all duration-300;
+}
+
+.glassmorphism-dark {
+  @apply bg-black/60 backdrop-blur-lg border border-white/10 shadow-xl transition-all duration-300;
 }
 
 .banner {
