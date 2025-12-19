@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { formatCategoryName } from "../utils/formatCategoryName";
+
 const ProductItem = ({
   id,
   image,
